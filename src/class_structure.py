@@ -2,7 +2,6 @@ class Player:
     def __init__(self, name, email):
         self.name = name
         self.email = email
-        self.score = 0
         self.losses = 0
         self.wins = 0
 
@@ -22,4 +21,10 @@ class Player:
         self.wins += 1
     def add_loss(self):
         self.losses += 1
+        
+    def print_profile(self):
+        print("Name : ", self.name)
+        print("Email : ", self.email)
+        print("Wins : ", self.wins)
+        print("Losses : ", self.losses)
     
