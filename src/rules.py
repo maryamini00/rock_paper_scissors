@@ -1,9 +1,3 @@
-def exit_program():
-    print("\ncome back later and let's play together again.")
-    print("I'll be waiting for you.")
-    print("\nexiting the program...")
-    exit()
-    
 def reviewing_input_logic(comp_choice, user_choice):
     try:
         if comp_choice == user_choice:
@@ -25,7 +19,7 @@ def reviewing_input_logic(comp_choice, user_choice):
     except:
         return "ERROR"
     
-def reviewing_result(i):
+def reviewing_result_each_round(i):
     if i == "both":
         comp_score = 1
         user_score = 1
@@ -43,3 +37,15 @@ def reviewing_result(i):
         user_score = 0
         return comp_score, user_score
 
+def Reviewing_overall_result(comp_score, user_score, comp_add_loss, comp_add_win, user_add_loss, user_add_win):
+    if comp_score > user_score:
+        comp_add_win()
+        user_add_loss()
+        return "Computer is winner :)\n"
+    elif user_score > comp_score:
+        user_add_win()
+        comp_add_loss()
+        return "User is winner :)\n"
+    else:
+        return "Draw :)\n"
+    

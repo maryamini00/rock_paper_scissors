@@ -4,13 +4,6 @@ class Player:
         self.email = email
         self.losses = losses
         self.wins = wins
-
-    def increase_score(self):
-        self.score += 1
-    def decrease_score(self):
-        self.score -= 1
-    def print_score(self):
-        print("your score: ", self.score)  
         
     def change_name(self, new_name):
         self.name = new_name

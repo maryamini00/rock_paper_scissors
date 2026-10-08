@@ -69,5 +69,14 @@ def each_round_game():
     print("|    (Enter the number of the desired option)     |")
     print("|                                                 |")
     
+def continuation_each_round_game(computer_choice, comp_score, user_score):
+    print("|    computer input : ", computer_choice, "                         |")
+    print("|    Result :                                     |")
+    print("|    Computer : ", comp_score, "                               |")
+    print("|    User : ", user_score, "                                   |")
+    print("---------------------------------------------------")
     
-        
+def result_title():
+    print("---------------------------------------------------")
+    print("|                    RESULT                       |")
+    print("---------------------------------------------------\n")
