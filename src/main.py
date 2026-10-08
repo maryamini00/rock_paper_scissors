@@ -33,7 +33,6 @@ def main():
         ci.start_game()
         co.game_logic()
         co.result(play_game(ci, co, user.add_loss, user.add_win))
-    sys.exit()
 
 if __name__ == "__main__":
     main()
