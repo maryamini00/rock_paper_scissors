@@ -62,7 +62,6 @@ def finding_person():
     
     
 def each_round_game():
-    print("---------------------------------------------------")
     print("    1- Rock")
     print("    2- Paper")
     print("    3- scissors")
@@ -73,8 +72,8 @@ def continuation_each_round_game(computer_choice, comp_score, user_score):
     print("    computer choice : ", computer_choice, "\n")
     print("    Result ")
     print("    Computer : ", comp_score)
-    print("    User : ", user_score)
-    print("---------------------------------------------------")
+    print("    User : ", user_score, "\n\n")
+
     
 def result(r):
     print("---------------------------------------------------")
