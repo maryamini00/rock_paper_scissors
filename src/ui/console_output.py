@@ -11,7 +11,7 @@ def start_end_choice():
     print("---------------------------------------------------")
     print("|                                                 |")
     print("|   - Enter 's' if you want to start the game     |")
-    print("|   - Enter 'e' if you want to quit               |")
+    print("|   - Enter 'e' if you want to exit               |")
     print("|   - Enter 'p' to see your profile               |")
     print("|                                                 |")
     print("|      ---------------------------------          |")
@@ -63,17 +63,17 @@ def finding_person():
     
 def each_round_game():
     print("---------------------------------------------------")
-    print("|    1- Rock                                      |")
-    print("|    2- Paper                                     |")
-    print("|    3- scissors                                  |")
-    print("|    (Enter the number of the desired option)     |")
-    print("|                                                 |")
+    print("    1- Rock")
+    print("    2- Paper")
+    print("    3- scissors")
+    print("    (Enter the number of the desired option)\n")
+
     
 def continuation_each_round_game(computer_choice, comp_score, user_score):
-    print("|    computer input : ", computer_choice, "                         |")
-    print("|    Result :                                     |")
-    print("|    Computer : ", comp_score, "                               |")
-    print("|    User : ", user_score, "                                   |")
+    print("    computer choice : ", computer_choice, "\n")
+    print("    Result ")
+    print("    Computer : ", comp_score)
+    print("    User : ", user_score)
     print("---------------------------------------------------")
     
 def result_title():

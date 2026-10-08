@@ -37,15 +37,13 @@ def reviewing_result_each_round(i):
         user_score = 0
         return comp_score, user_score
 
-def Reviewing_overall_result(comp_score, user_score, comp_add_loss, comp_add_win, user_add_loss, user_add_win):
+def Reviewing_overall_result(comp_score, user_score, user_add_loss, user_add_win):
     if comp_score > user_score:
-        comp_add_win()
         user_add_loss()
-        return "Computer is winner :)\n"
+        return "Computer is winner :(\n"
     elif user_score > comp_score:
         user_add_win()
-        comp_add_loss()
-        return "User is winner :)\n"
+        return "You are winner :)\n"
     else:
         return "Draw :)\n"
     

@@ -14,7 +14,7 @@ def user_info():
             
 
 def start_game():
-    print("Hit the Enter key so we can start the game :)))")
+    print("\n the Enter key so we can start the game :)))")
     while True:
         i = input().lower()
         if i == "e" or i =="exit":
@@ -38,10 +38,10 @@ def menu_choice():
             
 def input_123_with_validation():
     while True:
-        i = input("     your choice : ")
+        i = input("    your choice : ")
         if i == '1' or i == '2' or i == '3':
             return int(i) 
         else:
-            print("\n     invalid input")
-            print("     try again !\n")
+            print("\n    invalid input")
+            print("    try again !\n")
 
