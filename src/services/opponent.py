@@ -1,9 +1,10 @@
 from models.player import Player
+import random
 from faker import Faker as fk
-import numpy as np
 fake = fk()
+
 def create_computer_player():
-    return Player(fake.name(), fake.email(), np.random.randint(1, 60), np.random.randint(1, 60))
+    return Player(fake.name(), fake.email(), random.randint(1, 60), random.randint(1, 60))
 
 def computer_random_choice():
-    return np.random.randint(1, 4)
+    return random.randint(1, 3)

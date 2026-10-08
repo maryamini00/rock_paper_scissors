@@ -1,4 +1,4 @@
-def reviewing_input_logic(comp_choice, user_choice):
+def round_winner(comp_choice, user_choice):
     try:
         if comp_choice == user_choice:
             return "both"
@@ -19,25 +19,18 @@ def reviewing_input_logic(comp_choice, user_choice):
     except:
         return "ERROR"
     
-def reviewing_result_each_round(i):
-    if i == "both":
-        comp_score = 1
-        user_score = 1
-        return comp_score, user_score
-    elif i == "user":
-        comp_score = 0
-        user_score = 1
-        return comp_score, user_score
-    elif i == "computer":
-        comp_score = 1
-        user_score = 0
-        return comp_score, user_score
+def round_points(winner):
+    """first computer score and second user score"""
+    if winner == "both":
+        return 1, 1
+    elif winner == "user":
+        return 0, 1
+    elif winner == "computer":
+        return 1, 0
     else:
-        comp_score = 0
-        user_score = 0
-        return comp_score, user_score
+        return 0, 0
 
-def Reviewing_overall_result(comp_score, user_score, user_add_loss, user_add_win):
+def overall_winner(comp_score, user_score, user_add_loss, user_add_win):
     if comp_score > user_score:
         user_add_loss()
         return "Computer is winner :(\n"

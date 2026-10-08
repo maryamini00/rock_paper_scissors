@@ -76,7 +76,13 @@ def continuation_each_round_game(computer_choice, comp_score, user_score):
     print("    User : ", user_score)
     print("---------------------------------------------------")
     
-def result_title():
+def result(r):
     print("---------------------------------------------------")
     print("|                    RESULT                       |")
     print("---------------------------------------------------\n")
+    print(r, "\n")
+    
+def exit_print():
+    print("\ncome back later and let's play together again.")
+    print("I'll be waiting for you.")
+    print("\nexiting the program...")

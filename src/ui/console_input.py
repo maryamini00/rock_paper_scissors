@@ -1,5 +1,6 @@
 from email_validator import validate_email, EmailNotValidError
-from game import exit_program
+from ui.console_output import exit_print
+import sys
 def user_info():
     name = input("name : ")
     while True:
@@ -18,7 +19,8 @@ def start_game():
     while True:
         i = input().lower()
         if i == "e" or i =="exit":
-            exit_program()
+            exit_print()
+            sys.exit()
         elif i == "":
             break
         else:
