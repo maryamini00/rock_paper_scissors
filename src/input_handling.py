@@ -15,10 +15,17 @@ def user_info():
             print("invalid email\ntry again !")
             
 
-# def start_info():
-#     i = input("Hit Enter and let’s see what you’re hiding in there :)))").lower()
-#     if i == "e" or i =="exit":
-#         exit_program()
+def start_game():
+    print("Hit the Enter key so we can start the game :)))")
+    while True:
+        i = input().lower()
+        if i == "e" or i =="exit":
+            exit_program()
+        elif i == "":
+            break
+        else:
+            print("\ninvalid input")
+            print("try again !\n")
     
 def play_exit(start_end_choice_print):
     while True:
@@ -36,8 +43,15 @@ def play_exit(start_end_choice_print):
         elif i == "s" or i == "start":
             break
         else:
-            print("\ninvalid output")
+            print("\ninvalid input")
             print("try again !\n")
             
-            
-    
+def input_123_with_validation():
+    while True:
+        i = input("     your choice : ")
+        if i == '1' or i == '2' or i == '3':
+            return int(i) 
+        else:
+            print("\n     invalid input")
+            print("     try again !\n")
+

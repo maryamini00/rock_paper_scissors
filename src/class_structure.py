@@ -1,9 +1,9 @@
 class Player:
-    def __init__(self, name, email):
+    def __init__(self, name, email, losses, wins):
         self.name = name
         self.email = email
-        self.losses = 0
-        self.wins = 0
+        self.losses = losses
+        self.wins = wins
 
     def increase_score(self):
         self.score += 1

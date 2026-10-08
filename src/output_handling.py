@@ -1,4 +1,4 @@
-def game_title():
+def program_title():
     print("---------------------------------------------------")
     print("|                                                 |")
     print("|                    ROCK                         |")
@@ -24,22 +24,50 @@ def start_end_choice():
 def user_information():
     print("---------------------------------------------------")
     print("|                                                 |")
-    print("|                YOUR INFORMATION                 |")
+    print("|              PROFILE INFORMATION                |")
     print("|                                                 |")
     print("---------------------------------------------------")
 
 def start_game():
     print("---------------------------------------------------")
     print("|                                                 |")
-    print("|             let's start the game                |")
+    print("|             Let's start the game                |")
     print("|                                                 |")
     print("---------------------------------------------------")
     
+def game_logic():
+    print("---------------------------------------------------")
+    print("|                   GAME LOGIC                    |")
+    print("|                                                 |")
+    print("|    Each game :                                  |")
+    print("|    - is played against a computer-selected      |")
+    print("|      opponent                                   |")
+    print("|    - consists of 7 rounds                       |")
+    print("|    - results in a win or loss recorded for      |")
+    print("|      both players based on the outcome of       |")
+    print("|      these seven rounds                         |")
+    print("|                                                 |")
+    print("---------------------------------------------------")
+        
+def game_title(i):
+    print("---------------------------------------------------")
+    print("|                                                 |")
+    print("|                     Round ",i+1,"                   |")
+    print("|                                                 |")
+    print("---------------------------------------------------")
+    
+def finding_person():
+
+    print("\nFinding person ...\n")
     
     
-    
-    
-    
+def each_round_game():
+    print("---------------------------------------------------")
+    print("|    1- Rock                                      |")
+    print("|    2- Paper                                     |")
+    print("|    3- scissors                                  |")
+    print("|    (Enter the number of the desired option)     |")
+    print("|                                                 |")
     
     
         

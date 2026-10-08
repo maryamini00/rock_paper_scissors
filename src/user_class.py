@@ -1,3 +1,3 @@
 from class_structure import Player
-user = Player("", "")
+user = Player("", "", 0, 0)
 
